@@ -47,9 +47,19 @@ pipeline {
         }
         success {
             echo 'Pipeline executed successfully!'
+            emailext (
+                subject: "SUCCESS: Build #${env.BUILD_NUMBER} - ${env.JOB_NAME}",
+                body: "Good news! The build #${env.BUILD_NUMBER} of job '${env.JOB_NAME}' succeeded.\n\nCheck it here: ${env.BUILD_URL}",
+                to: "shivam.singh@nashtechglobal.com, shivamgcet221202@gmail.com"
+            )
         }
         failure {
             echo 'Pipeline failed.'
+            emailext (
+                subject: "FAILURE: Build #${env.BUILD_NUMBER} - ${env.JOB_NAME}",
+                body: "Oops! The build #${env.BUILD_NUMBER} of job '${env.JOB_NAME}' failed.\n\nPlease check the logs here: ${env.BUILD_URL}",
+                to: "shivam.singh@nashtechglobal.com, shivamgcet221202@gmail.com"
+            )
         }
     }
 }
