@@ -3,17 +3,22 @@ using TechTalk.SpecFlow;
 [Binding]
 public sealed class Hooks
 {
+    private readonly ScenarioContext scenarioContext;
+
+    public Hooks(ScenarioContext scenarioContext)
+    {
+        this.scenarioContext = scenarioContext;
+    }
+
     [BeforeScenario]
-    [Obsolete]
     public void BeforeScenario()
     {
-        Console.WriteLine("Starting Scenario: " + ScenarioContext.Current.ScenarioInfo.Title);
+        Console.WriteLine("Starting Scenario: " + scenarioContext.ScenarioInfo.Title);
     }
 
     [AfterScenario]
-    [Obsolete]
     public void AfterScenario()
     {
-        Console.WriteLine("Finished Scenario: " + ScenarioContext.Current.ScenarioInfo.Title);
+        Console.WriteLine("Finished Scenario: " + scenarioContext.ScenarioInfo.Title);
     }
 }

@@ -167,3 +167,4 @@
 /home/nashtech/Documents/C#DotNetAPIAutomation/ApiAutomationTests/obj/Debug/net7.0/ApiAutomationTests.pdb
 /home/nashtech/Documents/C#DotNetAPIAutomation/ApiAutomationTests/obj/Debug/net7.0/ApiAutomationTests.genruntimeconfig.cache
 /home/nashtech/Documents/C#DotNetAPIAutomation/ApiAutomationTests/obj/Debug/net7.0/ref/ApiAutomationTests.dll
+/home/nashtech/Documents/C#DotNetAPIAutomation/ApiAutomationTests/bin/Debug/net7.0/specflow.json

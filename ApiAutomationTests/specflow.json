@@ -1,0 +1,25 @@
+{
+    "bindingCulture": {
+      "name": "en-US"
+    },
+    "language": {
+      "feature": "en"
+    },
+    "generator": {
+      "allowDebugGeneratedFiles": true,
+      "allowRowTests": true,
+      "path": "Features"
+    },
+    "runtime": {
+      "stopAtFirstError": false,
+      "missingOrPendingStepsOutcome": "Inconclusive",
+      "obsoleteBehavior": "None",
+      "executionOrder": "random"
+    },
+    "nunit": {
+      "numberOfTestWorkers": 4,
+      "runtimeProvider": "NUnit3"
+    },
+    "stepAssemblies": []
+  }
+  

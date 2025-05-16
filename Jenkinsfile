@@ -35,7 +35,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 dir("${env.SOLUTION_FOLDER}") {
-                    sh 'dotnet test --no-build --logger:"console;verbosity=normal"'
+                    sh 'dotnet test --no-build --logger:"console;verbosity=detailed"'
                 }
             }
         }

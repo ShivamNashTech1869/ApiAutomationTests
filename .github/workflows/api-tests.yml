@@ -28,6 +28,6 @@ jobs:
         working-directory: ./ApiAutomationTests
 
       - name: Run API Tests
-        run: dotnet test --no-build --logger:"console;verbosity=normal"
+        run: dotnet test --no-build --logger:"console;verbosity=detailed"
         working-directory: ./ApiAutomationTests
 
